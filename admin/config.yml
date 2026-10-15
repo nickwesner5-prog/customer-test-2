@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: nickwesner5-prog/customer-test-2
+  name: turbo-github
+  turbo_site_id: 5ba41ef9-1054-4bd6-a530-d95a7905719a
   branch: main
   base_url: https://site2-off.nickwesner3.workers.dev
   auth_endpoint: auth
