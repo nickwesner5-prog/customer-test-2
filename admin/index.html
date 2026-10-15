@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Website Editor</title>
+
+  <style>
+    #website-text-search {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      border: 2px solid #cccccc;
+      border-radius: 6px;
+      background: white;
+      color: #222;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    #website-text-search:focus {
+      outline: none;
+      border-color: #3273dc;
+    }
+
+    #website-search-container {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    #website-search-count {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.17.0-beta.0/dist/decap-cms.js"></script>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const SEARCH_ID = "website-text-search";
+      const CONTAINER_ID = "website-search-container";
+
+      let searchQuery = "";
+
+      function getTextLabels() {
+        return Array.from(
+          document.querySelectorAll("label")
+        ).filter(function (label) {
+          return /^TEXT_\d+/i.test(
+            label.textContent.trim()
+          );
+        });
+      }
+
+      function getFieldContainer(label) {
+        let element = label.parentElement;
+
+        while (element && element !== document.body) {
+          const inputs = element.querySelectorAll(
+            "input, textarea, [contenteditable='true']"
+          );
+
+          const labels = Array.from(
+            element.querySelectorAll("label")
+          ).filter(function (item) {
+            return /^TEXT_\d+/i.test(
+              item.textContent.trim()
+            );
+          });
+
+          if (
+            inputs.length > 0 &&
+            labels.length === 1
+          ) {
+            return element;
+          }
+
+          element = element.parentElement;
+        }
+
+        return null;
+      }
+
+      function getFields() {
+        const labels = getTextLabels();
+
+        return labels.map(function (label) {
+          return {
+            label: label,
+            container: getFieldContainer(label)
+          };
+        }).filter(function (item) {
+          return item.container !== null;
+        });
+      }
+
+      function getFieldValue(container) {
+        const inputs = container.querySelectorAll(
+          "input, textarea, [contenteditable='true']"
+        );
+
+        return Array.from(inputs).map(function (input) {
+          if (input.isContentEditable) {
+            return input.textContent || "";
+          }
+
+          return input.value || "";
+        }).join(" ");
+      }
+
+      function filterFields() {
+        const fields = getFields();
+
+        const query = searchQuery
+          .trim()
+          .toLowerCase();
+
+        let matches = 0;
+
+        fields.forEach(function (field) {
+          const labelText =
+            field.label.textContent.toLowerCase();
+
+          const fieldText =
+            getFieldValue(field.container).toLowerCase();
+
+          const matchesSearch =
+            query === "" ||
+            labelText.includes(query) ||
+            fieldText.includes(query);
+
+          field.container.style.display =
+            matchesSearch ? "" : "none";
+
+          if (matchesSearch) {
+            matches++;
+          }
+        });
+
+        const count = document.getElementById(
+          "website-search-count"
+        );
+
+        if (count) {
+          count.textContent = query
+            ? matches + " matching text fields"
+            : "Search your website text below";
+        }
+      }
+
+      function createSearchBar() {
+        const fields = getFields();
+
+        if (fields.length === 0) {
+          return;
+        }
+
+        const firstField = fields[0].container;
+
+        if (!firstField) {
+          return;
+        }
+
+        let searchContainer =
+          document.getElementById(CONTAINER_ID);
+
+        if (!searchContainer) {
+          searchContainer =
+            document.createElement("div");
+
+          searchContainer.id = CONTAINER_ID;
+
+          const searchInput =
+            document.createElement("input");
+
+          searchInput.id = SEARCH_ID;
+          searchInput.type = "search";
+
+          searchInput.placeholder =
+            "Search all website text...";
+
+          searchInput.setAttribute(
+            "aria-label",
+            "Search website text fields"
+          );
+
+          searchInput.value = searchQuery;
+
+          const count =
+            document.createElement("div");
+
+          count.id = "website-search-count";
+
+          count.textContent =
+            "Search your website text below";
+
+          searchContainer.appendChild(searchInput);
+          searchContainer.appendChild(count);
+
+          searchInput.addEventListener(
+            "input",
+            function () {
+              searchQuery = searchInput.value;
+              filterFields();
+            }
+          );
+        }
+
+        if (
+          searchContainer.parentElement !==
+          firstField.parentElement ||
+          searchContainer.nextElementSibling !== firstField
+        ) {
+          firstField.parentElement.insertBefore(
+            searchContainer,
+            firstField
+          );
+        }
+
+        if (searchQuery) {
+          filterFields();
+        }
+      }
+
+      function restoreFields() {
+        getFields().forEach(function (field) {
+          field.container.style.display = "";
+        });
+      }
+
+      function checkEditor() {
+        const fields = getFields();
+
+        if (fields.length > 0) {
+          createSearchBar();
+        } else {
+          const existing =
+            document.getElementById(CONTAINER_ID);
+
+          if (existing) {
+            existing.remove();
+          }
+
+          searchQuery = "";
+        }
+      }
+
+      window.addEventListener(
+        "beforeunload",
+        restoreFields
+      );
+
+      setInterval(checkEditor, 1000);
+
+      checkEditor();
+    })();
+  </script>
+
+</body>
+</html>

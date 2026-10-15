@@ -1,0 +1,600 @@
+backend:
+  name: github
+  repo: nickwesner3-stack/Site-5
+  branch: main
+  base_url: https://site2-off.nickwesner3.workers.dev
+  auth_endpoint: auth
+media_folder: images/uploads
+public_folder: /images/uploads
+collections:
+- name: website
+  label: Website
+  files:
+  - name: homepage
+    label: Homepage
+    file: content/homepage.yml
+    fields:
+    - label: Business Name
+      name: business_name
+      widget: string
+    - label: Business Logo
+      name: business_logo
+      widget: image
+      required: false
+      hint: Upload a PNG, SVG, or JPG business logo.
+    - label: Headline
+      name: headline
+      widget: string
+    - label: About Us
+      name: about
+      widget: text
+    - label: Phone Number
+      name: phone
+      widget: string
+    - label: Business Address
+      name: address
+      widget: string
+      required: false
+    - label: Google Maps Embed URL
+      name: map_url
+      widget: string
+      required: false
+    - label: Email
+      name: email
+      widget: string
+    - label: Hero Image
+      name: hero_image
+      widget: image
+    - label: About Image
+      name: about_image
+      widget: image
+      required: false
+    - label: Bottom Image
+      name: bottom_image
+      widget: image
+      required: false
+    - label: Gallery
+      name: gallery
+      widget: list
+      required: false
+      field:
+        label: Image
+        name: image
+        widget: image
+    - label: All Website Text
+      name: site_text
+      widget: object
+      collapsed: true
+      fields:
+      - label: text_001 — Evergreen Outdoor Co. | Landscape Design & Outdoor Living
+        name: text_001
+        widget: string
+        required: false
+      - label: text_002 — Services
+        name: text_002
+        widget: string
+        required: false
+      - label: text_003 — Projects
+        name: text_003
+        widget: string
+        required: false
+      - label: text_004 — Service Areas
+        name: text_004
+        widget: string
+        required: false
+      - label: text_005 — Our Process
+        name: text_005
+        widget: string
+        required: false
+      - label: text_006 — About
+        name: text_006
+        widget: string
+        required: false
+      - label: text_007 — Request Estimate
+        name: text_007
+        widget: string
+        required: false
+      - label: text_008 — Outdoor living, reimagined
+        name: text_008
+        widget: string
+        required: false
+      - label: text_009 — Designed for the way you actually want to live outside.
+        name: text_009
+        widget: string
+        required: false
+      - label: text_010 — Services
+        name: text_010
+        widget: string
+        required: false
+      - label: text_011 — Landscape Design
+        name: text_011
+        widget: string
+        required: false
+      - label: text_012 — Hardscaping
+        name: text_012
+        widget: string
+        required: false
+      - label: text_013 — Outdoor Living
+        name: text_013
+        widget: string
+        required: false
+      - label: text_014 — Property Care
+        name: text_014
+        widget: string
+        required: false
+      - label: text_015 — Explore
+        name: text_015
+        widget: string
+        required: false
+      - label: text_016 — Recent Projects
+        name: text_016
+        widget: string
+        required: false
+      - label: text_017 — Our Process
+        name: text_017
+        widget: string
+        required: false
+      - label: text_018 — About Us
+        name: text_018
+        widget: string
+        required: false
+      - label: text_019 — Request Estimate
+        name: text_019
+        widget: string
+        required: false
+      - label: text_020 — Service Areas
+        name: text_020
+        widget: string
+        required: false
+      - label: text_021 — South Jersey
+        name: text_021
+        widget: string
+        required: false
+      - label: text_022 — Atlantic County
+        name: text_022
+        widget: string
+        required: false
+      - label: text_023 — Cape May County
+        name: text_023
+        widget: string
+        required: false
+      - label: text_024 — Nearby Communities
+        name: text_024
+        widget: string
+        required: false
+      - label: text_025 — Services
+        name: text_025
+        widget: string
+        required: false
+      - label: text_026 — Projects
+        name: text_026
+        widget: string
+        required: false
+      - label: text_027 — Service Areas
+        name: text_027
+        widget: string
+        required: false
+      - label: text_028 — Our Process
+        name: text_028
+        widget: string
+        required: false
+      - label: text_029 — About
+        name: text_029
+        widget: string
+        required: false
+      - label: text_030 — Request Estimate
+        name: text_030
+        widget: string
+        required: false
+      - label: "text_031 — Upload your future B-roll video to:\n        assets/landscaping-he"
+        name: text_031
+        widget: string
+        required: false
+      - label: text_032 — Landscape Design • Build • Care
+        name: text_032
+        widget: string
+        required: false
+      - label: text_033 — elevated.
+        name: text_033
+        widget: string
+        required: false
+      - label: "text_034 — Thoughtful landscapes, enduring craftsmanship and outdoor\n       "
+        name: text_034
+        widget: string
+        required: false
+      - label: text_035 — Start Your Project
+        name: text_035
+        widget: string
+        required: false
+      - label: text_036 — Explore Our Work
+        name: text_036
+        widget: string
+        required: false
+      - label: text_037 — Scroll to explore
+        name: text_037
+        widget: string
+        required: false
+      - label: text_038 — Built Outside
+        name: text_038
+        widget: string
+        required: false
+      - label: "text_039 — We don't just maintain landscapes.\n          We create places"
+        name: text_039
+        widget: string
+        required: false
+      - label: text_040 — worth coming home to.
+        name: text_040
+        widget: string
+        required: false
+      - label: text_041 — Discover what we do →
+        name: text_041
+        widget: string
+        required: false
+      - label: text_042 — What We Do
+        name: text_042
+        widget: string
+        required: false
+      - label: text_043 — From first sketch to final detail.
+        name: text_043
+        widget: string
+        required: false
+      - label: "text_044 — One team. One vision. A complete approach to creating,\n          "
+        name: text_044
+        widget: text
+        required: false
+      - label: text_045 — Landscape Design
+        name: text_045
+        widget: string
+        required: false
+      - label: "text_046 — Purposeful planting, beautiful structure and a plan\n             "
+        name: text_046
+        widget: text
+        required: false
+      - label: text_047 — Outdoor Living
+        name: text_047
+        widget: string
+        required: false
+      - label: "text_048 — Patios, walkways, gathering spaces and hardscapes\n               "
+        name: text_048
+        widget: text
+        required: false
+      - label: text_049 — Property Care
+        name: text_049
+        widget: string
+        required: false
+      - label: "text_050 — Detail-focused seasonal and ongoing landscape care\n              "
+        name: text_050
+        widget: text
+        required: false
+      - label: text_051 — Built with
+        name: text_051
+        widget: string
+        required: false
+      - label: text_052 — intention.
+        name: text_052
+        widget: string
+        required: false
+      - label: text_053 — The Evergreen Standard
+        name: text_053
+        widget: string
+        required: false
+      - label: text_054 — Details make the difference.
+        name: text_054
+        widget: string
+        required: false
+      - label: "text_055 — Great outdoor spaces aren't created by accident. Every\n          "
+        name: text_055
+        widget: text
+        required: false
+      - label: text_056 — Work With Us
+        name: text_056
+        widget: string
+        required: false
+      - label: text_057 — Our Process
+        name: text_057
+        widget: string
+        required: false
+      - label: text_058 — Clear from day one.
+        name: text_058
+        widget: string
+        required: false
+      - label: "text_059 — From the first conversation through the final walkthrough,\n      "
+        name: text_059
+        widget: text
+        required: false
+      - label: text_060 — Consult
+        name: text_060
+        widget: string
+        required: false
+      - label: "text_061 — We meet, walk the property and learn what you want from\n         "
+        name: text_061
+        widget: string
+        required: false
+      - label: text_062 — Design
+        name: text_062
+        widget: string
+        required: false
+      - label: "text_063 — We shape the vision into a practical, cohesive plan built\n       "
+        name: text_063
+        widget: string
+        required: false
+      - label: text_064 — Build
+        name: text_064
+        widget: string
+        required: false
+      - label: "text_065 — Our team brings the plan to life with quality materials\n         "
+        name: text_065
+        widget: string
+        required: false
+      - label: text_066 — Enjoy
+        name: text_066
+        widget: string
+        required: false
+      - label: "text_067 — We complete the details, walk the project with you and\n          "
+        name: text_067
+        widget: string
+        required: false
+      - label: text_068 — Selected Work
+        name: text_068
+        widget: string
+        required: false
+      - label: text_069 — Spaces made to be lived in.
+        name: text_069
+        widget: string
+        required: false
+      - label: "text_070 — A look at landscapes and outdoor environments built around\n      "
+        name: text_070
+        widget: text
+        required: false
+      - label: text_071 — Featured Project • New Jersey
+        name: text_071
+        widget: string
+        required: false
+      - label: text_072 — Backyard Transformation
+        name: text_072
+        widget: string
+        required: false
+      - label: "text_073 — The kind of outdoor space that completely changes how you\n       "
+        name: text_073
+        widget: string
+        required: false
+      - label: text_074 — Sample Client
+        name: text_074
+        widget: string
+        required: false
+      - label: text_075 — New Jersey Homeowner • Demo Testimonial
+        name: text_075
+        widget: string
+        required: false
+      - label: text_076 — Where We Work
+        name: text_076
+        widget: string
+        required: false
+      - label: text_077 — Proudly serving New Jersey.
+        name: text_077
+        widget: string
+        required: false
+      - label: "text_078 — This demo currently uses a general New Jersey service area.\n     "
+        name: text_078
+        widget: text
+        required: false
+      - label: text_079 — Atlantic County
+        name: text_079
+        widget: string
+        required: false
+      - label: text_080 — Cape May County
+        name: text_080
+        widget: string
+        required: false
+      - label: text_081 — South Jersey
+        name: text_081
+        widget: string
+        required: false
+      - label: text_082 — Shore Communities
+        name: text_082
+        widget: string
+        required: false
+      - label: text_083 — Residential
+        name: text_083
+        widget: string
+        required: false
+      - label: text_084 — Commercial
+        name: text_084
+        widget: string
+        required: false
+      - label: text_085 — Service Area
+        name: text_085
+        widget: string
+        required: false
+      - label: text_086 — New Jersey
+        name: text_086
+        widget: string
+        required: false
+      - label: "text_087 — Serving homeowners and properties throughout the region.\n        "
+        name: text_087
+        widget: text
+        required: false
+      - label: text_088 — Netlify-ready form
+        name: text_088
+        widget: string
+        required: false
+      - label: text_089 — Start A Project
+        name: text_089
+        widget: string
+        required: false
+      - label: text_090 — Let's build something outside.
+        name: text_090
+        widget: string
+        required: false
+      - label: "text_091 — Tell us a little about your property and what you have in\n       "
+        name: text_091
+        widget: text
+        required: false
+      - label: 'text_092 — Don''t fill this out:'
+        name: text_092
+        widget: string
+        required: false
+      - label: text_093 — First Name
+        name: text_093
+        widget: string
+        required: false
+      - label: text_094 — Last Name
+        name: text_094
+        widget: string
+        required: false
+      - label: text_095 — Email
+        name: text_095
+        widget: string
+        required: false
+      - label: text_096 — Phone
+        name: text_096
+        widget: string
+        required: false
+      - label: text_097 — What can we help with?
+        name: text_097
+        widget: string
+        required: false
+      - label: text_098 — Select a service
+        name: text_098
+        widget: string
+        required: false
+      - label: text_099 — Landscape Design
+        name: text_099
+        widget: string
+        required: false
+      - label: text_100 — Hardscaping
+        name: text_100
+        widget: string
+        required: false
+      - label: text_101 — Outdoor Living
+        name: text_101
+        widget: string
+        required: false
+      - label: text_102 — Property Care
+        name: text_102
+        widget: string
+        required: false
+      - label: text_103 — Complete Property Transformation
+        name: text_103
+        widget: string
+        required: false
+      - label: text_104 — Other
+        name: text_104
+        widget: string
+        required: false
+      - label: text_105 — Tell us about your project
+        name: text_105
+        widget: string
+        required: false
+      - label: text_106 — Request My Estimate
+        name: text_106
+        widget: string
+        required: false
+      - label: "text_107 — Demo website. Business information and service areas can be\n     "
+        name: text_107
+        widget: text
+        required: false
+      - label: "text_108 — Thoughtful landscapes. Quality craftsmanship.\n            Outdoor"
+        name: text_108
+        widget: string
+        required: false
+      - label: text_109 — Explore
+        name: text_109
+        widget: string
+        required: false
+      - label: text_110 — Services
+        name: text_110
+        widget: string
+        required: false
+      - label: text_111 — Projects
+        name: text_111
+        widget: string
+        required: false
+      - label: text_112 — Process
+        name: text_112
+        widget: string
+        required: false
+      - label: text_113 — About
+        name: text_113
+        widget: string
+        required: false
+      - label: text_114 — Services
+        name: text_114
+        widget: string
+        required: false
+      - label: text_115 — Landscape Design
+        name: text_115
+        widget: string
+        required: false
+      - label: text_116 — Hardscaping
+        name: text_116
+        widget: string
+        required: false
+      - label: text_117 — Outdoor Living
+        name: text_117
+        widget: string
+        required: false
+      - label: text_118 — Property Care
+        name: text_118
+        widget: string
+        required: false
+      - label: text_119 — Contact
+        name: text_119
+        widget: string
+        required: false
+      - label: text_120 — Request Estimate
+        name: text_120
+        widget: string
+        required: false
+      - label: text_121 — Service Area
+        name: text_121
+        widget: string
+        required: false
+      - label: text_122 — Call Us
+        name: text_122
+        widget: string
+        required: false
+      - label: text_123 — Email Us
+        name: text_123
+        widget: string
+        required: false
+      - label: text_124 — Landscape Design • Build • Care
+        name: text_124
+        widget: string
+        required: false
+      - label: text_125 — Hero opening words
+        name: text_125
+        widget: string
+        required: false
+    - label: Other Website Images
+      name: site_images
+      widget: object
+      collapsed: true
+      fields:
+      - label: image_001 — photo-1558904541-efa843a96f01?auto=format&fit=crop&w=22
+        name: image_001
+        widget: image
+        required: false
+      - label: image_002 — photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w
+        name: image_002
+        widget: image
+        required: false
+      - label: image_003 — photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w
+        name: image_003
+        widget: image
+        required: false
+    - label: Form Placeholder Text
+      name: site_placeholders
+      widget: object
+      collapsed: true
+      fields:
+      - label: What would you like to change or create?
+        name: placeholder_001
+        widget: string
+        required: false
+    - label: Estimate Form Endpoint (required to receive requests)
+      name: estimate_form_endpoint
+      widget: string
+      required: false
+      hint: Paste a verified HTTPS form endpoint (for example from Formspree). Leave empty until configured; visitors will
+        see a setup notice instead of a broken submission.

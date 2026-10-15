@@ -1,0 +1,193 @@
+business_name: Evergreen Outdoor Co.
+business_logo: /images/uploads/evergreen-outdoor-co.-nature-logo.png
+headline: Quality lawn care done right
+about: We create and maintain beautiful outdoor spaces for homeowners and businesses.
+phone: (555) 123-4567
+address: 3500 Pan American Drive, Miami, Florida, 33133
+email: hello@evergreenoutdoor.com
+hero_image: images/uploads/34835e2b-dfd4-450f-a03c-150b87bae5da.png
+about_image: /images/uploads/06_boulder_landscape.jpg
+bottom_image: /images/uploads/04_front_entrance.jpg
+gallery:
+  - /images/uploads/05_garden_beds.jpg
+  - /images/uploads/03_stone_steps.jpg
+  - /images/uploads/02_firepit_patio.jpg
+site_text:
+  text_112: Process
+  text_002: Services
+  text_123: Email Us
+  text_013: Outdoor Living
+  text_024: Nearby Communities
+  text_035: Start Your Project
+  text_046: |-
+    Purposeful planting, beautiful structure and a plan
+                    designed specifically around your property.
+  text_057: Our Process
+  text_068: Selected Work
+  text_079: Atlantic County
+  text_101: Outdoor Living
+  text_113: About
+  text_003: Projects
+  text_124: Landscape Design • Build • Care
+  text_014: Property Care
+  text_025: Services
+  text_036: Explore Our Work
+  text_047: Outdoor Living
+  text_058: Clear from day one.
+  text_069: Spaces made to be lived in.
+  text_102: Property Care
+  text_114: Services
+  text_004: Service Areas
+  text_125: Outdoor spaces,
+  text_015: Explore
+  text_026: Projects
+  text_037: Scroll to explore
+  text_048: |-
+    Patios, walkways, gathering spaces and hardscapes
+                    engineered to look beautiful and perform for years.
+  text_059: |-
+    From the first conversation through the final walkthrough,
+              you'll know what's happening, what's next and who to call.
+  text_103: Complete Property Transformation
+  text_115: Landscape Design
+  text_005: Our Process
+  text_016: Recent Projects
+  text_027: Service Areas
+  text_038: Built Outside
+  text_049: Property Care
+  text_104: Other
+  text_116: Hardscaping
+  text_006: About
+  text_017: Our Process
+  text_028: Our Process
+  text_039: |-
+    We don't just maintain landscapes.
+              We create places
+  text_105: Tell us about your project
+  text_117: Outdoor Living
+  text_007: Request Estimate
+  text_018: About Us
+  text_029: About
+  text_106: Request My Estimate
+  text_118: Property Care
+  text_008: Outdoor living, reimagined
+  text_019: Request Estimate
+  text_107: |-
+    Demo website. Business information and service areas can be
+              replaced with the client's real information before launch.
+  text_119: Contact
+  text_009: Designed for the way you actually want to live outside.
+  text_108: |-
+    Thoughtful landscapes. Quality craftsmanship.
+                Outdoor spaces built to last.
+  text_109: Explore
+  text_090: Let's build something outside.
+  text_080: Cape May County
+  text_091: |-
+    Tell us a little about your property and what you have in
+              mind. We'll use the information below to start the
+              conversation.
+  text_070: |-
+    A look at landscapes and outdoor environments built around
+              real homes, real properties and real life.
+  text_081: South Jersey
+  text_092: "Don't fill this out:"
+  text_060: Consult
+  text_071: Featured Project • New Jersey
+  text_082: Shore Communities
+  text_093: First Name
+  text_050: |-
+    Detail-focused seasonal and ongoing landscape care
+                    designed to keep your property looking its best.
+  text_061: |-
+    We meet, walk the property and learn what you want from
+                the space.
+  text_072: Backyard Transformation
+  text_083: Residential
+  text_094: Last Name
+  text_040: worth coming home to.
+  text_051: Built with
+  text_062: Design
+  text_073: |-
+    The kind of outdoor space that completely changes how you
+            experience your home.
+  text_084: Commercial
+  text_095: Email
+  text_030: Request Estimate
+  text_041: Discover what we do →
+  text_052: intention.
+  text_063: |-
+    We shape the vision into a practical, cohesive plan built
+                around your property.
+  text_074: Sample Client
+  text_085: Service Area
+  text_096: Phone
+  text_020: Service Areas
+  text_031: |-
+    Upload your future B-roll video to:
+            assets/landscaping-hero.mp4
+  text_042: What We Do
+  text_053: The Evergreen Standard
+  text_064: Build
+  text_075: New Jersey Homeowner • Demo Testimonial
+  text_086: New Jersey
+  text_097: What can we help with?
+  text_120: Request Estimate
+  text_010: Services
+  text_021: South Jersey
+  text_032: Landscape Design • Build • Care
+  text_043: From first sketch to final detail.
+  text_054: Details make the difference.
+  text_065: Our team brings the plan to life with quality materials            and
+    careful craftsmanship.
+  text_076: Where We Work
+  text_087: |-
+    Serving homeowners and properties throughout the region.
+                Contact us to confirm service at your location.
+  text_098: Select a service
+  text_121: Service Area
+  text_011: Landscape Design
+  text_022: Atlantic County
+  text_033: elevated.
+  text_044: |-
+    One team. One vision. A complete approach to creating,
+              building and caring for exceptional outdoor spaces.
+  text_055: |-
+    Great outdoor spaces aren't created by accident. Every
+              material, grade, planting and finishing detail has a purpose.
+              We approach each property with the same goal: build it right,
+              make it beautiful and create something that lasts.
+  text_066: Enjoy
+  text_077: Proudly serving New Jersey.
+  text_088: Netlify-ready form
+  text_099: Landscape Design
+  text_110: Services
+  text_001: Evergreen Outdoor Co. | Landscape Design & Outdoor Living
+  text_122: Call Us
+  text_012: Hardscaping
+  text_023: Cape May County
+  text_034: |-
+    Thoughtful landscapes, enduring craftsmanship and outdoor
+                spaces designed around the way you live.
+  text_045: Landscape Design
+  text_056: Work With Us
+  text_067: |-
+    We complete the details, walk the project with you and
+                leave you with a space ready to live in.
+  text_078: |-
+    This demo currently uses a general New Jersey service area.
+              When the site goes to a real landscaping company, we can
+              replace this with their exact towns, counties and location.
+  text_089: Start A Project
+  text_100: Hardscaping
+  text_111: Projects
+site_images:
+  image_001: https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=90
+  image_002: https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2200&q=90
+  image_003: https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=2200&q=90
+  image_004: https://images.unsplash.com/photo-1558521558-037f1cb027c5?auto=format&fit=crop&w=1600&q=90
+  image_005: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=90
+  image_006: https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=90
+site_placeholders:
+  placeholder_001: What would you like to change or create?
+estimate_form_endpoint: ""
